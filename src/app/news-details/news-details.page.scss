@@ -1,0 +1,35 @@
+ion-content {
+  --ion-background-color: #2b2c34;
+}
+
+ion-title {
+  font-size: 24px;
+}
+
+ion-icon {
+  font-size: 24px;
+}
+
+ion-card {
+    ion-card-header
+    {
+        ion-card-subtitle
+        {
+            margin-top: 20px;
+        }
+    }
+  ion-card-content {
+    p {
+      font-size: 16px;
+      text-overflow: ellipsis;
+      text-align: justify;
+      display: inline-block;
+    }
+  }
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}

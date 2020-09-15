@@ -1,0 +1,20 @@
+ion-content {
+  --ion-background-color: #2b2c34;
+}
+
+ion-title
+{
+    font-size: 24px;
+}
+
+ion-card {
+  ion-card-header {
+    ion-card-title {
+      color: #ffffff;
+    }
+    ion-card-subtitle
+    {
+        margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-icon color="primary" slot="start" name="arrow-back-outline" routerLink="/tabs/tab1"></ion-icon>
+    <ion-title>
+      Details
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card color="primary">
+    <ion-img [src]="article.urlToImage"></ion-img>
+    <ion-card-header>
+      <ion-card-title>
+        {{ article.title }}
+      </ion-card-title>
+      <ion-card-subtitle>
+        {{ article.author }}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p rows="10">
+        {{ article.description }}
+      </p>
+      <a [href]="article.url" target="_blank">See more....</a>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

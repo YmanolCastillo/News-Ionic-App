@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>
+      News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+<ion-card color="primary" *ngFor="let article of data?.articles" (click)="VerMas(article)">
+  <ion-img [src]="article.urlToImage"></ion-img>
+  <ion-card-header>
+    <ion-card-title>
+      {{ article.title }}
+    </ion-card-title>
+    <ion-card-subtitle>
+     Published at: {{ article.publishedAt }}
+    </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+<!-- <p>
+  {{ article.description }}
+</p> -->
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
